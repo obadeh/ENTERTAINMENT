@@ -3,8 +3,60 @@
 <html
 <head>
 <link rel="stylesheet" href="styleSheet/style.css">
+
+<script src="java/javaScript.js"></script>
+
 </head>
 <body>
+
+        <h2>Confirm Box</h2>
+
+
+<button onclick="myFunction()"> <q>Q1</q></button>
+
+<p id="demo"></p>
+
+<script>
+
+function myFunction() {
+  var txt;
+  if (confirm("DO YOU LIKE MOVIES ??")) {
+    txt = "ENJOY!";
+  } else {
+    txt = "GO OUT";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+        
+
+        <button onclick="myFunction1()">Q2</button>
+
+        <p id="demo1"></p>
+        
+        <script>
+        function myFunction1() {
+          var text;
+          var favDrink = prompt("What's your favorite Movei??");
+          switch(favDrink) {
+            case "the god father":
+              text = "Excellent. it's my favorite too";
+              break;
+            case "the shawshank redumtion":
+              text = "Excellent. it's my favorite too";
+              break;
+            case "the dark knight":
+              text = "Excellent. it's my favorite too";
+              break;
+            default:
+              text = "I SHOULD ADD IT TO MY SITE..";
+          }
+          document.getElementById("demo1").innerHTML = text;
+        }
+        </script>
+
+
+
    <header>
        <h1>
            No fun No life
